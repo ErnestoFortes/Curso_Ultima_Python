@@ -18,9 +18,11 @@ while True:
     elif resp == 2:
         #opção de cadastrar uma nova pessoa
         cabeçalho('NOVO CADASTRO')
-        nome = str(input('Nome: '))
-        idade = leiaInt('Idade: ')
-        cadastrar(arq, nome, idade)
+        nome = str(input('Digite o seu nome Nome: '))
+        idade = leiaInt('Digite a sua Idade: ')
+        nascimento = str(input('Digite a sua data de nascimento: '))
+        CPF = str(input('Digite o seu CPF: '))
+        cadastrar(arq, nome, idade, nascimento, CPF)
     elif resp == 3:
         #Opção de sair do sistema
         cabeçalho("saindo do sistema .... Até logo")

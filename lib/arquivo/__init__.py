@@ -32,14 +32,14 @@ def lerarquivo(nome):
     finally:
         a.close()
 
-def cadastrar(arq, nome='desconhecido', idade=0):
+def cadastrar(arq, nome='desconhecido', idade=0, nascimento=0, CPF=0):
     try:
         a = open(arq, 'at')
     except:
         print('Houve um erro na abertura do arquivo!!')
     else:
         try:
-            a.write(f'{nome};{idade}\n')
+            a.write(f'{nome};{idade};{nascimento};{CPF}\n')
         except:
             print('Houve um erro na hora de escrever os dadps')
         else:
